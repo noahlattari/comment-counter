@@ -16,8 +16,8 @@ class Main {
             System.out.println("You chose to open this file: " + chooser.getSelectedFile().getName());
             currentFile = chooser.getSelectedFile();
             CodeAnalyzer analyzer = new CodeAnalyzer();
-            int lineCount = analyzer.countLines(currentFile);
-            System.out.println(lineCount);
+            String result = analyzer.countLines(currentFile);
+            System.out.println(result);
         }
 
     }

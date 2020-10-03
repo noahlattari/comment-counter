@@ -9,6 +9,7 @@
 *
 */
 package hello;
+
 import java.util.Arrays;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -37,21 +38,24 @@ services in the hello package, allowing it to find the controllers.
 @SpringBootApplication //@SpringBootApplication is a convenience annotation that adds
 all of the above.
 public class Application {
-// Main method
-public static void main(String[] args) {
-SpringApplication.run(Application.class, args);
-}
-//The CommandLineRunner method is marked as a @Bean and this runs on start up.
-@Bean
-public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
-//TODO: Refactor this code to print out the beans in a sorted order.
-return args -> { //Let's inspect the beans provided by Spring Boot
-System.out.println("Let's inspect the beans provided by Spring Boot:");
-String[] beanNames = ctx.getBeanDefinitionNames();
-// Arrays.sort(beanNames);
-for (String beanName : beanNames) {
-System.out.println(beanName);
-}
-};
-}
+    // Main method
+    public static void main(String[] args) {
+        SpringApplication.run(Application.class, args);
+    }
+    //The CommandLineRunner method is marked as a @Bean and this runs on start up.
+    @Bean
+    public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
+
+        //TODO: Refactor this code to print out the beans in a sorted order.
+        return args -> { //Let's inspect the beans provided by Spring Boot
+
+            System.out.println("Let's inspect the beans provided by Spring Boot:");
+
+            String[] beanNames = ctx.getBeanDefinitionNames();
+//          Arrays.sort(beanNames);
+            for (String beanName : beanNames) {
+                System.out.println(beanName);
+            }
+        };
+    }
 }
