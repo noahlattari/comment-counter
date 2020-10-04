@@ -31,7 +31,8 @@ Lines in block comments count as **anything** between `/* */`, regardless if the
 Similarly, if a comment is too long for the current line, and the IDE pushes it down one line, it now counts as **two lines** within block comments. The\ following code would count as 4 lines within block comments. This is not exactly how the PDF demonstrated it but it makes a lot more sense to me since a line\ becoming too long creates a new line in the IDE.
 ```
     */
-    * This is a very long comment so long it is going to reach the end of\ the ide and span a second line\
+    * This is a very long comment so long it is going to reach the end of the 
+    ide and span a second line
     */
 ```
 #### Assumption 4:
