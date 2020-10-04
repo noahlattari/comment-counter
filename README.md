@@ -1,4 +1,3 @@
-
 # Capital One Coding Challenge Submission - Code Analyzer
 
 To run the application:
