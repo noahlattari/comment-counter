@@ -41,7 +41,7 @@ Similarly, if a comment is too long for the current line, and the IDE pushes it 
 #### Assumption 5:
 ``TODO`` should only appear in single line comments.\
 <code> //TODO: stuff </code>  This would be a valid TODO count.\
-<code> */ TODO */ </code> This would not be valid, although it is only on a single line Java defines this as a **block comment** (see above).\
+<code> */ TODO */ </code> This would not be valid, although it is only on a single line Java defines this as a **block comment** (see above).
 
 #### Assumption 6:
 White space lines count as a line.
