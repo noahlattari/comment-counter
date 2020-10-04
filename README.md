@@ -1,3 +1,4 @@
+
 # Capital One Coding Challenge Submission - Code Analyzer
 
 To run the application:
@@ -17,17 +18,17 @@ The code was written with the intention of only analyzing Java code. With some s
 Lines in block comments count as **anything** between `/* */`, regardless if the line starts with a lone `*`, spans multiple lines, or spans one line. The following code would all count as 3 lines within block comments.
 <code> /*
 \* This is a comment
-*/ </code>
+\*/ </code>
 
 <code> /*
 This is a comment
-*/
+\*/
 
 #### Assumption 3:
 Similarly, if a comment is too long for the current line, and the IDE pushes it down one line, it now counts as **two lines** within block comments. The following code would count as 4 lines within block comments. This is not exactly how the PDF demonstrated it but it makes a lot more sense to me since a line becoming too long creates a new line in the IDE.
 <code>/*
 \* This is a very long comment so long it is going to reach the end of the ide and span a second line
-*/
+\*/
 
 #### Assumption 4:
 <code>/* A comment */ </code> This is not a single line comment, but a block comment.
