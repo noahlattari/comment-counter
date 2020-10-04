@@ -1,4 +1,3 @@
-import java.util.*;
 import javax.swing.JFileChooser;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import java.io.*;
@@ -12,12 +11,14 @@ class Main {
         chooser.setFileFilter(filter);
 
         int returnVal = chooser.showOpenDialog(null);
+
         if (returnVal == JFileChooser.APPROVE_OPTION) {
-            System.out.println("You chose to open this file: " + chooser.getSelectedFile().getName());
             currentFile = chooser.getSelectedFile();
             CodeAnalyzer analyzer = new CodeAnalyzer();
             String result = analyzer.countLines(currentFile);
             System.out.println(result);
+        } else if (returnVal == JFileChooser.CANCEL_OPTION) {
+            System.exit(0);
         }
 
     }
