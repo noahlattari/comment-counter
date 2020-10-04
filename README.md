@@ -17,7 +17,7 @@ The code was written with the intention of only analyzing Java code. With some s
 Lines in block comments count as **anything** between `/* */`, regardless if the line starts with a lone `*`, spans multiple lines, or spans one line. The following code would all count as 3 lines within block comments.
 <code> /*
 \* This is a comment
-*/ </code>
+\*/ </code>
 
 <code> /*
 This is a comment
