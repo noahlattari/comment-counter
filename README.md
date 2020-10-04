@@ -12,7 +12,7 @@ Known issues:
 
 # Assumptions made
 #### Assumption 1:
-The code was written with the intention of only analyzing Java code. Although after some research I realize this *should* work for **Javascript, TypeScript, C/C++, C#**. Essentially any coding language that uses the same comment conventions as Java, although to me it makes more sense for this to be language specific as it was written in Java.
+The code was written with the intention of only analyzing Java code. With some smaller iterations and more rules, it could easily work for **JavaScript, C/C++ and C#**. The reason it won't work right now is in Java single quotes are not valid syntax for Strings so it was one less edge case I had to check. In other languages single quotes can sometimes be used for Strings.
 #### Assumption 2:
 Lines in block comments count as **anything** between `/* */`, regardless if the line starts with a lone `*`, spans multiple lines, or spans one line. The following code would all count as 3 lines within block comments.
 <code> /*
