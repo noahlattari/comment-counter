@@ -49,7 +49,7 @@ Similarly, if a comment is too long for the current line, and the IDE pushes it 
 #### Assumption 6:
 White space lines count as a line.
 
-###Assignment.java
+### Assignment.java
 This is a file I created from the PDF example. It may not be the exact same since my vscode used automatic formatting to change it around (mine only has 56 lines vs the mentioned 60). I designed my code based on other people's IDE's potentially doing the same. Assignment.java should yield:\
 Total # of lines: 56 **Different than PDF example due to vscode formatting**\
 Total # of comment lines:28\
