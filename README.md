@@ -27,6 +27,9 @@ Lines in block comments count as **anything** between `/* */`, regardless if the
     \*
 ```
 
+
+For further clarification, the first block comment inside ```Application.java``` would be counted as 10 lines within a block comment.
+
 #### Assumption 3:
 Similarly, if a comment is too long for the current line, and the IDE pushes it down one line, it now counts as **two lines** within block comments. The following code would count as 4 lines within block comments. This is not exactly how the PDF demonstrated it but it makes a lot more sense to me since a line becoming too long creates a new line in the IDE.
 ```
@@ -45,3 +48,12 @@ Similarly, if a comment is too long for the current line, and the IDE pushes it 
 
 #### Assumption 6:
 White space lines count as a line.
+
+###Assignment.java
+This is a file I created from the PDF example. It may not be the exact same since my vscode used automatic formatting to change it around (mine only has 56 lines vs the mentioned 60). I designed my code based on other people's IDE's potentially doing the same. Assignment.java should yield:\
+Total # of lines: 56 **Different than PDF example due to vscode formatting**\
+Total # of comment lines:28\
+Total # of single line comments: 6\
+Total # of comment lines within block comments: 22\
+Total number of block line comments: 2\
+Total number of TODOs: 1\
